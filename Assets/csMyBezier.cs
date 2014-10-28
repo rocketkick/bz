@@ -19,5 +19,7 @@ public class csMyBezier : MonoBehaviour {
 		t += 0.01f;
 		if( t > 1f )
 			t = 0f;
+		vec = myBezier.GetPointAtTime( t );
+		transform.LookAt(vec);
 	}
 }
